@@ -8,16 +8,17 @@ Instruction for operating the command line utility:
 a. version >= 3.1.    
 b. The bin directory (something like - C:\opencv\build\x64\vc14\bin) - needs to be added to Environment Variables.
 
-2. Run the utility command line (interview_excercise_hole_filling.exe) with parameters as follows:
-· image path (example in : submition_files\input_files_for_example\image1.jpg ).
-· mask path  (example in : submition_files\input_files_for_example\mask1.jpg ).
-· Z.
-· Epsilon.
-· conectivity type (expected values: 4 or 8).
+2. Run the utility command line (interview_excercise_hole_filling.exe) with parameters as follows
+a. image path (example in : submition_files\input_files_for_example\image1.jpg ).
+b. mask path  (example in : submition_files\input_files_for_example\mask1.jpg ).
+c. Z.
+d. Epsilon.
+e. conectivity type (expected values: 4 or 8).
 
 Example of running:
->>  cd "the path to submition_files"\submition_files
->> interview_excercise_hole_filling.exe input_files_for_example\\image1.jpg input_files_for_example\\mask1.jpg 3 0.001 8
+>>cd "the path to submition_files"\submition_files
+
+>>interview_excercise_hole_filling.exe input_files_for_example\\image1.jpg input_files_for_example\\mask1.jpg 3 0.001 8
 
 The output file is saved under the folder from which the command line was operated.
 
@@ -30,6 +31,7 @@ Directory path for code review
 //////////////////////////////////////////////////////
 
 · all "library" related files (.h and .cpp) are grouped under directory : hole_filling_'library'.
+
 · all command line utility related files (.h and .cpp) are grouped under directory : command_line_utility.
 
 
@@ -69,7 +71,7 @@ Algorithm:
 
 1. We go over the boundary pixels. And find the hole pixels that connect (neighbor) to them.
 Those hole pixels filled only by their neighbors (the boundary).
-2. Now the hole was shrinking. And we update the new boundary - ( all the pixels we just filled).
+2. Now the hole is shrinking. And we update the new boundary - ( all the pixels we just filled).
 3. We will repeat this process (1 + 2) until the entire hole is filled.
 
 Run time is O(n). explanation:
