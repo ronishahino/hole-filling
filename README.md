@@ -6,7 +6,7 @@ Instruction for operating the command line utility:
 
 1. OpenCV needs to be installed   
 a. version >= 3.1.    
-b. The bin directory (something like - C:\opencv\build\x64\vc14\bin) - needs to be added to Environment Variables.
+b. The bin directory (something like - C:\opencv\build\x64\vc14\bin) - needs to be added to (Environment Variables->Path).
 
 2. Run the utility command line (interview_excercise_hole_filling.exe) with parameters as follows
 a. image path (example in : submition_files\input_files_for_example\image1.jpg ).
