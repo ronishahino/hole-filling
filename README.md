@@ -1,8 +1,6 @@
-////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 Instruction for operating the command line utility:
-
-////////////////////////////////////////////////////////////////////////////////////////////////////////////
+=============================
 
 1. OpenCV needs to be installed   
 a. version >= 3.1.    
@@ -23,26 +21,19 @@ Example of running:
 The output file is saved under the folder from which the command line was operated.
 
 
-
-/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
 Directory path for code review
-
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+=============================
 
 · all "library" related files (.h and .cpp) are grouped under directory : hole_filling_'library'.
 
 · all command line utility related files (.h and .cpp) are grouped under directory : command_line_utility.
 
 
-
-////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
 Questions
+=============================
 
-////////////////////////////////////////////////////////////////////////////////////////////////////////////
  
-Question A.
+### Question A.
 
 If there are m boundary pixels and n pixels inside the hole. the complexity of the algorithm is: 
   **O(n*m)**.  for each hole pixel we sum over all pixels in the  boundary. 
@@ -67,7 +58,7 @@ So total run time is:
 
 -----------------------------------------------------------------------------
 
-Question B.
+### Question B.
 
 Approximate algorithm in O(n):
  
