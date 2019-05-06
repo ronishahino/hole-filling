@@ -1,5 +1,7 @@
 //////////////////////////////////////////////////////
+
 Instruction for operating the command line utility:
+
 //////////////////////////////////////////////////////
 
 1. OpenCV needs to be installed   
@@ -22,7 +24,9 @@ Instruction for operating the command line utility:
 
 
 //////////////////////////////////////////////////////
+
 Directory path for code review
+
 //////////////////////////////////////////////////////
 
   · all "library" related files (.h and .cpp) are grouped under directory : hole_filling_'library' 
@@ -31,7 +35,9 @@ Directory path for code review
 
 
 //////////////////////////////////////////////////////
+
 Questions
+
 //////////////////////////////////////////////////////
 
 1. If there are m boundary pixels and n pixels inside the hole. the complexity of the algorithm is: 
