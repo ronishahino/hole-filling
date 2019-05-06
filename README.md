@@ -1,8 +1,8 @@
-//////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 Instruction for operating the command line utility:
 
-//////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 1. OpenCV needs to be installed   
 a. version >= 3.1.    
@@ -24,11 +24,11 @@ The output file is saved under the folder from which the command line was operat
 
 
 
-//////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 Directory path for code review
 
-//////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 · all "library" related files (.h and .cpp) are grouped under directory : hole_filling_'library'.
 
@@ -36,32 +36,40 @@ Directory path for code review
 
 
 
-//////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 Questions
 
-//////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////
  
-1. If there are m boundary pixels and n pixels inside the hole. the complexity of the algorithm is: 
-  O(n*m).  for each hole pixel we sum over all pixels in the  boundary. 
+Question A.
+
+If there are m boundary pixels and n pixels inside the hole. the complexity of the algorithm is: 
+  **O(n*m)**.  for each hole pixel we sum over all pixels in the  boundary. 
 
 Express m by n:
 
 The worst case is when every pixel in the hole is connecting only with another 2 
 hole pixels in a way that they share as little neighbors as possible:
 For 4-conectivity its simply a line. and for 8-conectivity its a diagonal line.
-In this case m = O(n). every hole pixel adds k neighbors to boundary. so we
+In this case **m = O(n)**. every hole pixel adds k neighbors to boundary. so we
 have n*k boundary pixels.
 
 The best case is a hole shape that has the smallest perimeter per area -> a circle.
 If the hole pixels arranged in a circle like shape. with area of O(n).
-The perimeter ( boundary ) is  m = Omega(sqrt(n)). 
+The perimeter ( boundary ) is  **m = Omega(sqrt(n))**. 
   
 So total run time is:
-Omega(n*sqrt(n)).
-O(n^2).
 
-2. Approximate algorithm in O(n):
+**Omega(n*sqrt(n)).**
+
+**O(n^2).**
+
+-----------------------------------------------------------------------------
+
+Question B.
+
+Approximate algorithm in O(n):
  
 Every hole pixel is estimated only by its neighbors. Instead of all boundary pixels.
 We visit from the most outer pixels ( closest to boundary) up to the most internal, so that the "skeleton" pixels
