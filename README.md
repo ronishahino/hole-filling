@@ -11,9 +11,13 @@ Instruction for operating the command line utility:
 
 2. Run the utility command line (interview_excercise_hole_filling.exe) with parameters as follows:
   · image path (example in : submition_files\input_files_for_example\image1.jpg )
+  
   · mask path  (example in : submition_files\input_files_for_example\mask1.jpg )
+  
   · Z
+  
   · Epsilon
+  
   · conectivity type (expected values: 4 or 8)             
 
   Example of running:
