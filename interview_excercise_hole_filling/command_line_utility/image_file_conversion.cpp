@@ -29,11 +29,6 @@ Mat image_file_conversion::read_image_file(std::string path, bool is_color)
 		return Mat();
 	}
 
-	////to remove
-	//namedWindow("image", WINDOW_NORMAL);
-	//imshow("image", img);
-	//waitKey(0);
-
 	return img;
 }
 
