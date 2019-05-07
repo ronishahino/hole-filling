@@ -85,7 +85,7 @@ vector<vector<float>> image_file_conversion::image_and_mask_files_to_grayScale_h
 			if ((int)mask.at<uchar>(j, i) > 200)
 			{
 				G_format_img[i][j] = -1;
-				//img.at<uchar>(j, i) = 0; // to remove - for temporart visualozation
+				//img.at<uchar>(j, i) = 0; // to remove - for temporary visualization
 			}
 			else
 			{
@@ -94,10 +94,6 @@ vector<vector<float>> image_file_conversion::image_and_mask_files_to_grayScale_h
 			}
 		}
 	}
-
-	/*namedWindow("image", WINDOW_NORMAL);
-	imshow("image", img);
-	waitKey(0);*/
 
 	
 
