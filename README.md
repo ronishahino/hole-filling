@@ -63,8 +63,8 @@ So total run time is:
 Approximate algorithm in O(n):
  
 Every hole pixel is estimated only by its neighbors. Instead of all boundary pixels.
-We visit from the most outer pixels ( closest to boundary) up to the most internal, so that the "skeleton" pixels
-are the last to be visited.
+We visit from the most outer pixels ( closest to boundary) up to the most internal,
+So that a pixel closer to the boudary fills before a pixel farther from the boundary.
   
 Algorithm:
 
